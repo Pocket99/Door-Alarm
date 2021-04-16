@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "6873272653",
+    "firebase_url": "https://alarmdoor-55b6b-default-rtdb.firebaseio.com",
+    "project_id": "alarmdoor-55b6b",
+    "storage_bucket": "alarmdoor-55b6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6873272653:android:5a70a26f18db1162ada704",
+        "android_client_info": {
+          "package_name": "com.example.coen390project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "6873272653-gncspn7en1u965l07lkimq79d48k41tn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr9nTqBu4PiEz__UHm62cQkmKNI4hQg0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "6873272653-gncspn7en1u965l07lkimq79d48k41tn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

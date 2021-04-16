@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModeSwitch">
+
+    <Switch
+        android:id="@+id/alertModeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alert_mode"
+        app:layout_constraintBottom_toTopOf="@+id/nightModeSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/nightModeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="388dp"
+        android:text="@string/night_mode"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/colon2"
+        android:layout_width="15dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/colon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/endTimeMinute"
+        app:layout_constraintStart_toEndOf="@+id/endTimeHour"
+        app:layout_constraintTop_toBottomOf="@+id/colon"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <EditText
+        android:id="@+id/endTimeHour"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:ems="10"
+        android:maxLength="2"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        app:layout_constraintStart_toEndOf="@+id/endTimeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/startTimeHour"
+        app:layout_constraintVertical_bias="0.596" />
+
+    <EditText
+        android:id="@+id/startTimeMinute"
+        android:layout_width="47dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="60dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:maxLength="2"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nightModeSwitch" />
+
+    <TextView
+        android:id="@+id/endTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:text="@string/end_time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startTimeTextView"
+        app:layout_constraintVertical_bias="0.374" />
+
+    <TextView
+        android:id="@+id/startTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/start_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nightModeSwitch" />
+
+    <TextView
+        android:id="@+id/colon"
+        android:layout_width="14dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/colon"
+        app:layout_constraintEnd_toStartOf="@+id/startTimeMinute"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toEndOf="@+id/startTimeHour"
+        app:layout_constraintTop_toBottomOf="@+id/nightModeSwitch" />
+
+    <EditText
+        android:id="@+id/endTimeMinute"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        android:maxLength="2"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startTimeMinute"
+        app:layout_constraintVertical_bias="0.581" />
+
+    <EditText
+        android:id="@+id/startTimeHour"
+        android:layout_width="45dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:maxLength="2"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/endTimeMinute"
+        app:layout_constraintStart_toEndOf="@+id/startTimeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/nightModeSwitch"
+        app:layout_constraintVertical_bias="0.526" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colon2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
