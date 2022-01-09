@@ -1,1 +1,1 @@
-# coen390project
+# Concordia Electrical and Computer Engineering Project
